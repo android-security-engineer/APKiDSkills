@@ -1,8 +1,8 @@
 # APKiD — Skills for AI Agents
 
-[![Release](https://img.shields.io/github/v/release/android-security-engineer/APKiD-skills?include_prereleases)](https://github.com/android-security-engineer/APKiD-skills/releases/)
-[![Python](https://img.shields.io/badge/python-%E2%89%A53.8-blue)](https://github.com/android-security-engineer/APKiD-skills)
-[![License](https://img.shields.io/github/license/android-security-engineer/APKiD-skills)](LICENSE.GPL)
+[![Release](https://img.shields.io/github/v/release/android-security-engineer/APKiDSkills?include_prereleases)](https://github.com/android-security-engineer/APKiDSkills/releases/)
+[![Python](https://img.shields.io/badge/python-%E2%89%A53.8-blue)](https://github.com/android-security-engineer/APKiDSkills)
+[![License](https://img.shields.io/github/license/android-security-engineer/APKiDSkills)](LICENSE.GPL)
 
 APKiD tells you how an APK was made — it identifies compilers, packers, obfuscators, protectors, signers and other artifacts. It's [_PEiD_](https://www.aldeid.com/wiki/PEiD) for Android.
 
@@ -32,8 +32,8 @@ For more information on what this tool can be used for, check out:
 Install from source (this repo publishes source tarballs on GitHub Releases, not PyPI):
 
 ```bash
-git clone https://github.com/android-security-engineer/APKiD-skills
-cd APKiD-skills
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 pip install -e .
 ```
 
@@ -46,7 +46,7 @@ pip install -e ".[mcp]"
 Or from a release tarball:
 
 ```bash
-wget https://github.com/android-security-engineer/APKiD-skills/releases/download/v4.0.0/apkid-4.0.0.tar.gz
+wget https://github.com/android-security-engineer/APKiDSkills/releases/download/v4.0.0/apkid-4.0.0.tar.gz
 tar xzf apkid-4.0.0.tar.gz
 cd apkid-4.0.0
 pip install -e .
@@ -57,8 +57,8 @@ pip install -e .
 You can also run APKiD with [Docker](https://www.docker.com/community-edition):
 
 ```bash
-git clone https://github.com/android-security-engineer/APKiD-skills
-cd APKiD-skills/
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills/
 docker build . -t apkid
 
 # Classic CLI
@@ -265,10 +265,10 @@ This repository is also a **Claude Code Skills** package. Install it to add APKi
 
 ```bash
 # Add as a skills source
-claude skills add --source https://github.com/android-security-engineer/APKiD-skills
+claude skills add --source https://github.com/android-security-engineer/APKiDSkills
 
 # Or install locally
-claude skills add --source /path/to/APKiD-skills
+claude skills add --source /path/to/APKiDSkills
 ```
 
 ### Available Skills
@@ -327,8 +327,8 @@ Depending on your needs, you must choose one of them and follow its policies. A 
 If you want to install the latest version in order to make changes, develop your own rules, and so on, simply clone this repository, compile the rules, and install the package in editable mode:
 
 ```bash
-git clone https://github.com/android-security-engineer/APKiD-skills
-cd APKiD-skills
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 python prep-release.py
 pip install -e .[dev,test]
 ```
@@ -378,8 +378,8 @@ APKiD 可以告诉你一个 APK 是如何构建的。它能够识别许多编译
 从源码安装（本仓库在 GitHub Releases 发布源码包，而非 PyPI）：
 
 ```bash
-git clone https://github.com/android-security-engineer/APKiD-skills
-cd APKiD-skills
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 pip install -e .
 ```
 
@@ -392,7 +392,7 @@ pip install -e ".[mcp]"
 或者从发布压缩包安装：
 
 ```bash
-wget https://github.com/android-security-engineer/APKiD-skills/releases/download/v4.0.0/apkid-4.0.0.tar.gz
+wget https://github.com/android-security-engineer/APKiDSkills/releases/download/v4.0.0/apkid-4.0.0.tar.gz
 tar xzf apkid-4.0.0.tar.gz
 cd apkid-4.0.0
 pip install -e .
@@ -403,8 +403,8 @@ pip install -e .
 也可以使用 [Docker](https://www.docker.com/community-edition) 运行 APKiD：
 
 ```bash
-git clone https://github.com/android-security-engineer/APKiD-skills
-cd APKiD-skills/
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills/
 docker build . -t apkid
 
 # 经典 CLI
@@ -611,10 +611,10 @@ python -m apkid.mcp
 
 ```bash
 # 添加为 skills 源
-claude skills add --source https://github.com/android-security-engineer/APKiD-skills
+claude skills add --source https://github.com/android-security-engineer/APKiDSkills
 
 # 或本地安装
-claude skills add --source /path/to/APKiD-skills
+claude skills add --source /path/to/APKiDSkills
 ```
 
 ### 可用技能
@@ -673,8 +673,8 @@ APKiD 使用**基于 YARA 规则的多层次特征匹配**来识别壳、保护�
 如果你想安装最新版本以进行修改、开发自己的规则等，只需克隆本仓库、编译规则并以可编辑模式安装包：
 
 ```bash
-git clone https://github.com/android-security-engineer/APKiD-skills
-cd APKiD-skills
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 python prep-release.py
 pip install -e .[dev,test]
 ```
