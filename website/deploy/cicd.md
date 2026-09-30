@@ -38,7 +38,7 @@ APKiDSkills 用 **GitHub Actions** 做 CI/CD，**GitHub Pages** 部署文档站�
 - 装 Node.js，`npm ci` 装 VitePress。
 - `npm run build` 构建 `website/.vitepress/dist`。
 - 上传 artifact，部署到 GitHub Pages。
-- 产物 URL：`https://rednaga.github.io/APKiD/`（或配置的域名）。
+- 产物 URL：`https://android-security-engineer.github.io/APKiDSkills/`（或配置的域名）。
 
 详见 [GitHub Pages 部署](./github-pages)。
 
@@ -64,7 +64,7 @@ git push origin master
  ✅/❌ 状态徽章     部署到 Pages
                       │
                       ▼
-            https://...github.io/APKiD
+            https://...github.io/APKiDSkills
 ```
 
 ## ⚙️ 前置配置（一次性）
@@ -82,8 +82,8 @@ git push origin master
 在 README 加徽章（可选）：
 
 ```markdown
-![CI](https://github.com/rednaga/APKiD/actions/workflows/ci.yml/badge.svg)
-![Docs](https://github.com/rednaga/APKiD/actions/workflows/deploy-docs.yml/badge.svg)
+![CI](https://github.com/android-security-engineer/APKiDSkills/actions/workflows/ci.yml/badge.svg)
+![Docs](https://github.com/android-security-engineer/APKiDSkills/actions/workflows/deploy-docs.yml/badge.svg)
 ```
 
 ## 📍 相关

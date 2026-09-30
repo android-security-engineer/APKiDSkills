@@ -214,8 +214,8 @@ cd website && npm install && npm run build
 ## 📊 工作流徽章
 
 ```markdown
-![CI](https://github.com/rednaga/APKiD/actions/workflows/ci.yml/badge.svg)
-![Deploy Docs](https://github.com/rednaga/APKiD/actions/workflows/deploy-docs.yml/badge.svg)
+![CI](https://github.com/android-security-engineer/APKiDSkills/actions/workflows/ci.yml/badge.svg)
+![Deploy Docs](https://github.com/android-security-engineer/APKiDSkills/actions/workflows/deploy-docs.yml/badge.svg)
 ```
 
 ## 📍 相关

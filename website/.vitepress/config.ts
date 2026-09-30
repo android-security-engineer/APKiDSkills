@@ -26,7 +26,7 @@ export default defineConfig({
       { text: '接口', link: '/interfaces/overview' },
       { text: '代码模块', link: '/modules/core-apkid' },
       { text: '检测规则', link: '/rules/overview' },
-      { text: 'GitHub', link: 'https://github.com/rednaga/APKiD' }
+      { text: 'GitHub', link: 'https://github.com/android-security-engineer/APKiDSkills' }
     ],
 
     sidebar: {
@@ -245,7 +245,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/rednaga/APKiD' }
+      { icon: 'github', link: 'https://github.com/android-security-engineer/APKiDSkills' }
     ],
 
     outline: {

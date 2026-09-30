@@ -22,11 +22,20 @@ export default function Footer() {
               <span className="text-lg font-bold text-fg-100">APKiD</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-fg-500">
-              Android 二进制识别工具 —— 一眼看出 APK / DEX / ELF 被如何构建、加固与保护。开源，由 RedNaga 维护。
+              Android 二进制识别工具 —— 一眼看出 APK / DEX / ELF 被如何构建、加固与保护。基于 {''}{' '}
+              <a
+                href="https://github.com/android-security-engineer/APKiDSkills"
+                target="_blank"
+                rel="noreferrer"
+                className="underline decoration-brand-500/40 underline-offset-4 hover:text-brand-300"
+              >
+                RedNaga APKiD
+              </a>{' '}
+              维护的 fork，持续更新。
             </p>
             <div className="mt-5 flex gap-4 text-sm">
               <a
-                href="https://github.com/rednaga/APKiD"
+                href="https://github.com/android-security-engineer/APKiDSkills"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 text-fg-400 transition-colors hover:text-brand-300"
@@ -88,7 +97,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/rednaga/APKiD/releases"
+                  href="https://github.com/android-security-engineer/APKiDSkills/releases"
                   target="_blank"
                   rel="noreferrer"
                   className="transition-colors hover:text-brand-300"
@@ -98,7 +107,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://raw.githubusercontent.com/rednaga/APKiD/master/LICENSE.md"
+                  href="https://github.com/android-security-engineer/APKiDSkills/blob/master/LICENSE.GPL"
                   target="_blank"
                   rel="noreferrer"
                   className="transition-colors hover:text-brand-300"

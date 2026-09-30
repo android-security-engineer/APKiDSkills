@@ -17,7 +17,7 @@ hero:
       link: /guide/what-is-apkid
     - theme: alt
       text: GitHub
-      link: https://github.com/rednaga/APKiD
+      link: https://github.com/android-security-engineer/APKiDSkills
 
 features:
   - icon: 🛡️

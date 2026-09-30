@@ -175,7 +175,7 @@ rule unknown_compiler : compiler {
 }
 ```
 
-这是"兜底"规则——是 dex 但不属于任何已知编译器。命中它说明出现了 **新编译器或异常产物**，提示去 [GitHub 提 issue](https://github.com/rednaga/APKiD/issues) 补规则。
+这是"兜底"规则——是 dex 但不属于任何已知编译器。命中它说明出现了 **新编译器或异常产物**，提示去 [GitHub 提 issue](https://github.com/android-security-engineer/APKiDSkills/issues) 补规则。
 
 ## 📍 相关
 

@@ -65,7 +65,7 @@ export default function Nav() {
             文档
           </a>
           <a
-            href="https://github.com/rednaga/APKiD"
+            href="https://github.com/android-security-engineer/APKiDSkills"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-3.5 py-2 text-sm font-semibold text-ink-950 transition-colors hover:bg-brand-400"

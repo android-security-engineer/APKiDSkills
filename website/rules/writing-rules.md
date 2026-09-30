@@ -145,5 +145,5 @@ rule mypacker_v1 : packer
 
 - [规则文件组织](./organization) — 放哪里。
 - [编译与发布](./compilation) — rules.yarc 怎么来。
-- [apkid-rule-dev 技能](https://github.com/rednaga/APKiD) — 辅助开发规则的 skill。
+- [apkid-rule-dev 技能](https://github.com/android-security-engineer/APKiDSkills) — 辅助开发规则的 skill。
 - [YARA 规则系统（指南）](../guide/yara-system) — 概念。

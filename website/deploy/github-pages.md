@@ -39,7 +39,7 @@ git push origin master
 push 后去 **Actions** 标签看 `Deploy Docs` 工作流。首次跑完，**Settings → Pages** 顶部会出现站点 URL，形如：
 
 ```
-https://rednaga.github.io/APKiD/
+https://android-security-engineer.github.io/APKiDSkills/
 ```
 
 ## 🌐 站点 URL
@@ -49,14 +49,14 @@ GitHub Pages 默认 URL 格式：
 - 用户/组织站点：`https://<owner>.github.io/`
 - 项目站点：`https://<owner>.github.io/<repo>/`
 
-APKiD 是项目仓库，默认是 `https://rednaga.github.io/APKiD/`。
+APKiD 是项目仓库，默认是 `https://android-security-engineer.github.io/APKiDSkills/`。
 
 ### 自定义域名（可选）
 
 若用自己的域名：
 
 1. **Settings → Pages → Custom domain**：填 `docs.apkid.io`（示例）。
-2. DNS 加 CNAME 记录指向 `rednaga.github.io`。
+2. DNS 加 CNAME 记录指向 `android-security-engineer.github.io`。
 3. 勾选 `Enforce HTTPS`。
 4. 在 `website/public/` 放一个 `CNAME` 文件（内容就是域名），让构建产物带上它。
 
@@ -106,7 +106,7 @@ on:
 gh run list --workflow=deploy-docs.yml
 
 # 拿到 URL
-gh api repos/rednaga/APKiD/pages --jq '.html_url'
+gh api repos/android-security-engineer/APKiDSkills/pages --jq '.html_url'
 ```
 
 或直接访问站点，确认最新内容（GitHub Pages 有 CDN 缓存，强刷或等几分钟）。

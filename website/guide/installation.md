@@ -55,8 +55,8 @@ pip install apkid
 ## 🐳 Docker（跨平台最省心）
 
 ```bash
-git clone https://github.com/rednaga/APKiD
-cd APKiD
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 docker build . -t rednaga:apkid
 ```
 
@@ -81,8 +81,8 @@ pip install -e ".[dev,test,mcp]"
 ## 🛠️ 从源码安装（开发）
 
 ```bash
-git clone https://github.com/rednaga/APKiD
-cd APKiD
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 
 # 安装系统依赖（Linux）
 sudo apt-get install -y libyara-dev

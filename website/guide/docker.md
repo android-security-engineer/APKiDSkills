@@ -8,8 +8,8 @@ APKiD 提供 Dockerfile，让你无需在本机装 `libyara` 即可运行。镜�
 ## 🏗️ 构建镜像
 
 ```bash
-git clone https://github.com/rednaga/APKiD
-cd APKiD
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 docker build . -t rednaga:apkid
 ```
 

@@ -8,8 +8,8 @@
 ## 🚀 一次性初始化
 
 ```bash
-git clone https://github.com/rednaga/APKiD
-cd APKiD
+git clone https://github.com/android-security-engineer/APKiDSkills
+cd APKiDSkills
 
 # 系统依赖（Linux）
 sudo apt-get install -y libyara-dev
