@@ -1,9 +1,15 @@
-# 文档站本地构建
+# 网站本地构建
 
+<span class="badge badge-info">React</span>
 <span class="badge badge-info">VitePress</span>
 <span class="badge badge-info">本地预览</span>
 
-本文讲怎么在本地跑起 VitePress 文档站，预览改动后再 push。
+本站点由两部分组成：
+
+- **官网首页** — `website/home/`，基于 React + TypeScript + Tailwind 的产品介绍页，部署后作为站点根页面（`/`），对应 "产品是什么 / 解决什么问题 / 如何解决 / 解决得怎么样"。
+- **文档站** — `website/`，VitePress 编写，承载功能指南、接口、规则等文档。
+
+部署时（`deploy-docs.yml`）先分别构建，再把官网产物合并到文档站构建结果的根目录作为首页。本节讲怎么在本地跑起这两部分，预览改动后再 push。
 
 ## 📋 前置
 
@@ -28,6 +34,7 @@ git commit -m "chore(website): add package-lock.json"
 ## 🚀 本地开发服务器
 
 ```bash
+cd website
 npm run dev
 ```
 
@@ -35,13 +42,39 @@ npm run dev
 
 按 `Ctrl+C` 停止。
 
+### 官网首页（React）
+
+```bash
+cd website/home
+npm install
+npm run dev      # http://localhost:5175，改 src/ 立即热更新
+```
+
+官网是独立 Vite 工程，`vite.config.ts` 里开了 `base: './'`（相对路径），保证合并进文档站根目录后资源引用不失效。常用命令：
+
+```bash
+npm run build    # 产物在 home/dist/，可被复制并包进站点根
+```
+
+> 💡 想同时看官网 + 文档的整体效果，按下面"生产构建"合并即可。
+
 ## 🏗️ 生产构建
 
 ```bash
-npm run build
+# 1. 文档站
+cd website && npm run build          # → .vitepress/dist/
+
+# 2. 官网（若未构建过）
+cd home && npm run build             # → home/dist/
+
+# 3. 合并：官网作为站点首页
+cp -r home/dist/. .vitepress/dist/
+
+# 4. 预览整体效果
+npm run preview                      # http://localhost:4173
 ```
 
-等价 `vitepress build`。输出到 `website/.vitepress/dist/`。这是 CI 部署时生成的同一份产物。
+等价 CI 中 `deploy-docs.yml` 的构建过程。注意第 3 步会把文档站原本的 `index.html` 覆盖为官网首页，文档站其余页面（`/guide/**` 等）保持原样。
 
 ## 👁️ 预览构建产物
 
@@ -60,9 +93,13 @@ website/
 │   └── theme/
 │       ├── index.ts        # 主题入口
 │       └── custom.css      # 自定义样式（badge、品牌色）
+├── home/                   # ● 官网首页（React + TS + Tailwind）
+│   ├── src/components/      # 各区块组件（Hero / How / Capabilities …）
+│   ├── src/data.tsx         # 页面内容数据 + 内联图标库
+│   └── package.json
 ├── public/
 │   └── favicon.svg         # 站点图标
-├── index.md                # 首页
+├── index.md                # 文档站首页（被官网合并覆盖）
 ├── guide/                  # 指南文档
 ├── interfaces/             # 接口文档
 ├── modules/                # 代码模块文档

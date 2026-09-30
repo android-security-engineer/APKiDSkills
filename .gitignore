@@ -33,3 +33,7 @@ eggs/
 *.egg
 
 *.DS_Store
+
+# React home page (website/home)
+node_modules/
+website/home/dist/

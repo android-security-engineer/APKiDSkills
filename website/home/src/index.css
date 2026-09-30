@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  /* 品牌绿（沿用 VitePress 站点的 #3aa675） */
+  --color-brand-50: #eef9f3;
+  --color-brand-100: #d5f0e2;
+  --color-brand-200: #aae3c8;
+  --color-brand-300: #7ad3ab;
+  --color-brand-400: #55c491;
+  --color-brand-500: #3aa675;
+  --color-brand-600: #2d8a62;
+  --color-brand-700: #23704f;
+  --color-brand-800: #1a553c;
+  --color-brand-900: #123c2b;
+
+  /* 深色背景（ink） */
+  --color-ink-950: #070b09;
+  --color-ink-900: #0b0f0d;
+  --color-ink-850: #0e1410;
+  --color-ink-800: #121a15;
+  --color-ink-700: #18231c;
+  --color-ink-600: #22312a;
+
+  /* 前景文字 */
+  --color-fg-100: #e8f2ec;
+  --color-fg-300: #b3c6ba;
+  --color-fg-400: #8ba396;
+  --color-fg-500: #64796e;
+
+  --font-sans: "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", "Cascadia Code",
+    Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink-950);
+  color: var(--color-fg-100);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-brand-500) 40%, transparent);
+  color: #fff;
+}
+
+/* 终端 mockup 里的语法高亮 */
+.term-ok { color: #4cc38a; }
+.term-key { color: #7ec8e8; }
+.term-dim { color: #64796e; }
+.term-str { color: #e2c08d; }
+.term-warn { color: #e0a24e; }
+.term-arrow { color: #3aa675; }
+
+/* 背景网格线 */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(58, 166, 117, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(58, 166, 117, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}

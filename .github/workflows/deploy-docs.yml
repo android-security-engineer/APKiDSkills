@@ -30,15 +30,28 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: website/package-lock.json
+          cache-dependency-path: |
+            website/package-lock.json
+            website/home/package-lock.json
 
-      - name: Install dependencies
+      - name: Install docs dependencies
         working-directory: website
         run: npm ci || npm install
 
       - name: Build VitePress site
         working-directory: website
         run: npm run build
+
+      - name: Install home dependencies
+        working-directory: website/home
+        run: npm ci || npm install
+
+      - name: Build React home page
+        working-directory: website/home
+        run: npm run build
+
+      - name: Merge home page into site root
+        run: cp -r website/home/dist/. website/.vitepress/dist/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
