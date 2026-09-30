@@ -4,7 +4,7 @@
 <span class="badge badge-info">CLI</span>
 <span class="badge badge-info">MCP</span>
 
-APKiD-skills 的核心架构原则是：**三个接口共享同一套扫描逻辑，绝不重复实现**。
+APKiDSkills 的核心架构原则是：**三个接口共享同一套扫描逻辑，绝不重复实现**。
 
 ## 🏛️ 三层架构
 

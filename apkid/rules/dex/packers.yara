@@ -772,7 +772,7 @@ rule jiagu_360_dex : packer
   meta:
     description = "Qihoo 360 Jiagu (DEX-level)"
     url         = "http://jiagu.360.cn/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/stub/StubApp; — classic 360 jiagu stub Application class
@@ -802,7 +802,7 @@ rule tencent_legu_dex : packer
   meta:
     description = "Tencent Legu (DEX-level)"
     url         = "https://cloud.tencent.com/product/ms"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/tencent/StubShell/TxAppEntry; — Legu-specific entry point
@@ -832,7 +832,7 @@ rule bangcle_dex : packer
   meta:
     description = "Bangcle (DEX-level)"
     url         = "https://www.bangcle.com/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/bangcle/ShellApplication; — Bangcle shell application
@@ -868,7 +868,7 @@ rule ijiami_dex : packer
   meta:
     description = "Ijiami (DEX-level)"
     url         = "https://www.ijiami.cn/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/ijiami/ShellApp; — ijiami shell application stub
@@ -898,7 +898,7 @@ rule alibaba_jiagu_dex : packer
   meta:
     description = "Alibaba Jiagu (DEX-level)"
     url         = "https://www.alibabacloud.com/zh/product/mpaas"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/taobao/windvm/packages/WindVmPackage; — Alibaba WindVM
@@ -928,7 +928,7 @@ rule tencent_mtp_dex : packer
   meta:
     description = "Mobile Tencent Protect (DEX-level, non-Legu variant)"
     url         = "https://intl.cloud.tencent.com/product/mtp"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // libshella.so string reference
@@ -952,7 +952,7 @@ rule baidu_jiagu_dex : packer
   meta:
     description = "Baidu Jiagu (DEX-level)"
     url         = "https://developer.baidu.com/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/baidu/protect/ProtectApplication; — Baidu jiagu stub
@@ -978,7 +978,7 @@ rule secneo_dex : packer
   meta:
     description = "SecNeo (DEX-level)"
     url         = "http://www.secneo.com"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/secneo/core/Entry;

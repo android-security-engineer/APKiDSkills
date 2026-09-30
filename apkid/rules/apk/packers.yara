@@ -1228,7 +1228,7 @@ rule jiagu_360_v4 : packer
   meta:
     description = "Qihoo 360 Jiagu v4"
     url         = "http://jiagu.360.cn/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // v4 uses libjiagu.so with specific versioned paths
@@ -1244,7 +1244,7 @@ rule jiagu_360_v5 : packer
   meta:
     description = "Qihoo 360 Jiagu v5"
     url         = "http://jiagu.360.cn/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // v5 uses libjiagu_64.so and libjiagu_so_64.so for arm64
@@ -1261,7 +1261,7 @@ rule jiagu_360_v6 : packer
   meta:
     description = "Qihoo 360 Jiagu v6 (enhanced)"
     url         = "http://jiagu.360.cn/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // v6 uses libjiagu_v6.so naming
@@ -1278,7 +1278,7 @@ rule tencent_legu_2024 : packer
   meta:
     description = "Tencent Legu (2024+ version)"
     url         = "https://cloud.tencent.com/product/ms"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Newer Legu versions use libshella-xxx.so with year suffix
@@ -1295,7 +1295,7 @@ rule bangcle_secshell_vmp : packer
   meta:
     description = "Bangcle SecShell (VMP edition)"
     url         = "https://www.bangcle.com/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // VMP edition has libSecShell.so + libSecShellEx.so
@@ -1312,7 +1312,7 @@ rule bangcle_standard : packer
   meta:
     description = "Bangcle (standard edition)"
     url         = "https://www.bangcle.com/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     $main_lib = "libsecexe.so"
@@ -1328,7 +1328,7 @@ rule ijiami_pro : packer
   meta:
     description = "Ijiami Pro (enterprise edition)"
     url         = "https://www.ijiami.cn/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Pro/enterprise edition uses different lib naming
@@ -1344,7 +1344,7 @@ rule alibaba_jiagu_v2 : packer
   meta:
     description = "Alibaba Jiagu v2 (mobisecenhance)"
     url         = "https://www.alibabacloud.com/zh/product/mpaas"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // v2 uses libmobisec.so as primary

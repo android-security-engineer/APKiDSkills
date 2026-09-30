@@ -137,7 +137,7 @@ rule jiagu_360_v5 : packer {
   meta:
     description = "Qihoo 360 Jiagu v5"
     url         = "http://jiagu.360.cn/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // v5 uses libjiagu_64.so and libjiagu_so_64.so for arm64
@@ -184,7 +184,7 @@ APK 层路径匹配 → 置信度 `low`。若同时在 `classes.dex` 命中 [`ji
 
 ## 🧠 版本变体规则
 
-`jiagu_360_v4`/`v5`/`v6`、`tencent_legu_2024`、`bangcle_secshell_vmp`/`bangcle_standard`、`ijiami_pro`、`alibaba_jiagu_v2` 这些是 APKiD-skills 扩展的版本区分规则，在原通用规则（`jiagu`/`tencent_legu`/`bangcle`/`ijiami`/`alibaba`）基础上，用更细的 lib 命名约定区分版本/edition。它们都带 `and not <原规则>` 避免双命中。
+`jiagu_360_v4`/`v5`/`v6`、`tencent_legu_2024`、`bangcle_secshell_vmp`/`bangcle_standard`、`ijiami_pro`、`alibaba_jiagu_v2` 这些是 APKiDSkills 扩展的版本区分规则，在原通用规则（`jiagu`/`tencent_legu`/`bangcle`/`ijiami`/`alibaba`）基础上，用更细的 lib 命名约定区分版本/edition。它们都带 `and not <原规则>` 避免双命中。
 
 ## 📍 相关
 

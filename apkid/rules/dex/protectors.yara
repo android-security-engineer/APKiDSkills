@@ -568,7 +568,7 @@ rule yidun_dex : protector
   meta:
     description = "NetEase Yidun (DEX-level)"
     url         = "https://dun.163.com/product/app-protect"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/netease/nis/wrapper/Entry; — Yidun wrapper entry
@@ -600,7 +600,7 @@ rule tongfu_shield_dex : protector
   meta:
     description = "Tongfu Shield (DEX-level)"
     url         = "https://www.tongfudun.com"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/egis/paysdk/PayegisSDK; — Tongfu/egis SDK class
@@ -625,7 +625,7 @@ rule nq_shield_dex : protector
 {
   meta:
     description = "NQ Shield (DEX-level)"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/nq/shield/StubApplication; — NQ shield stub
@@ -651,7 +651,7 @@ rule venustech_dex : protector
   meta:
     description = "Venustech (DEX-level)"
     url         = "https://www.venustech.com.cn/new_type/ydyyaqjg/"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/venustech/vempsdk/StubApp; — Venustech stub
@@ -676,7 +676,7 @@ rule dexprotectx_dex : protector
   meta:
     description = "DexProtect X (DEX-level)"
     url         = "https://dexprotectx.pro"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/dexprotectx/StubApp; — DexProtectX stub
@@ -699,7 +699,7 @@ rule eversafe_dex : protector
   meta:
     description = "Eversafe (DEX-level)"
     url         = "https://everspin.global/products/solutions/eversafe-mobile"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/eversafe/StubApp; — Eversafe stub
@@ -723,7 +723,7 @@ rule appcamo_dex : protector
   meta:
     description = "AppCamo (DEX-level)"
     url         = "http://appcamo.com/s2/s2_1.php"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Lcom/appcamo/StubApp; — AppCamo stub

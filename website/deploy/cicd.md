@@ -4,7 +4,7 @@
 <span class="badge badge-info">GitHub Actions</span>
 <span class="badge badge-info">GitHub Pages</span>
 
-APKiD-skills 用 **GitHub Actions** 做 CI/CD，**GitHub Pages** 部署文档站。本文是整体概览。
+APKiDSkills 用 **GitHub Actions** 做 CI/CD，**GitHub Pages** 部署文档站。本文是整体概览。
 
 ## 🔄 两条流水线
 

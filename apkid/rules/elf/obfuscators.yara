@@ -998,7 +998,7 @@ rule ollvm_cff_arm32 : obfuscator
   meta:
     description = "Obfuscator-LLVM Control Flow Flattening (ARM32)"
     url         = "https://github.com/obfuscator-llvm/obfuscator/wiki"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // CFF dispatcher pattern: CMP + BEQ/BNE chain on a state variable
@@ -1045,7 +1045,7 @@ rule ollvm_cff_arm64 : obfuscator
   meta:
     description = "Obfuscator-LLVM Control Flow Flattening (ARM64)"
     url         = "https://github.com/obfuscator-llvm/obfuscator/wiki"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // CFF dispatcher in ARM64 uses a state variable with CMP + B.EQ/B.NE
@@ -1092,7 +1092,7 @@ rule ollvm_bcf_arm64 : obfuscator
   meta:
     description = "Obfuscator-LLVM Bogus Control Flow (ARM64)"
     url         = "https://github.com/obfuscator-llvm/obfuscator/wiki"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // BCF inserts opaque predicates: always-true/false conditions that
@@ -1139,7 +1139,7 @@ rule hikari2_dexprotector : obfuscator
   meta:
     description = "Hikari 2.0 (DexProtector variant)"
     url         = "https://github.com/61bcdefg/Hikari-LLVM15"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // Hikari 2.0 based on LLVM 15.x retains the datadiv_decode pattern
@@ -1163,7 +1163,7 @@ rule ollvm_string_encryption_arm64 : obfuscator
   meta:
     description = "Obfuscator-LLVM String Encryption (ARM64, comment-stripped)"
     url         = "https://github.com/obfuscator-llvm/obfuscator/wiki"
-    author      = "APKiD-skills"
+    author      = "APKiDSkills"
 
   strings:
     // String encryption in OLLVM typically uses .datadiv_decodeXXXX functions
